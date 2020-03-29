@@ -15,7 +15,7 @@ yrange = [1e-2,1e2]
 xratio = math.log(xrange[1]/xrange[0],10)
 yratio = math.log(yrange[1]/yrange[0],10)
 # print(xratio)
-scale = 3
+scale = 2.5
 fig= plt.figure(figsize=(xratio*scale,yratio*scale))
 print('1. set canvas size')
 
@@ -70,13 +70,13 @@ bTR_txts = [r'$b_{TR}=1$', '2', '3', '4']
 bTR_ys = [3.58E+01, 7.18, 4.20, 3.1]
 bTR_x = 1e-2
 for idx, val in enumerate(bTR_txts):
-  plt.annotate(val, (bTR_x,bTR_ys[idx]), textcoords="offset points", xytext=(0,-5), ha='center', size=20) 
+  plt.annotate(val, (bTR_x,bTR_ys[idx]), textcoords="offset points", xytext=(0,-5), ha='center', size=18) 
 # annotate bBDF
 bBDF_txts = [r'$b_{BDF}=0$', '.2', '.4', '.6', '.8', '1']
 bBDF_y = 2e-2
 bBDF_xs = [1.22, 3.34, 6, 1.17E+01, 25, 50]
 for idx, val in enumerate(bBDF_txts):
-  plt.annotate(val, (bBDF_xs[idx],bBDF_y), textcoords="offset points", xytext=(0,-5), ha='center', size=20) 
+  plt.annotate(val, (bBDF_xs[idx],bBDF_y), textcoords="offset points", xytext=(0,-5), ha='center', size=18) 
 
 # show plot
 plt.show()
